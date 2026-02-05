@@ -22,7 +22,7 @@ public class Trida
     public void PridejStudenta(Student s)
     {
         if(s == null) throw new ArgumentNullException (nameof(s));
-        if(Student.Contains(s))
+        if(Studenti.Contains(s))
             throw new InvalidOperationException("Student již je ve třídě zapsán.");
         Studenti.Add(s);
     }
@@ -34,7 +34,7 @@ public class Trida
 
     public void VypisStudenty()
     {
-        Studenti.Show(s);
+        
     }
 }
 }
